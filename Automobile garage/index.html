@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/53f230e476.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            $(".middle").css("opacity", 1 - $(window).scrollTop() / 250);
+        });
+
+        $('a[href^="#"]').on("click", function (e) {
+            e.preventDefault();
+            $($(this).attr("href")).get(0).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <img src="logo.png" class="logo" width="230px" height="50px">
+        </a>
+        <nav class="center desktop">
+            <a href="#a">Mclaren</a>
+            <a href="#b">Ford</a>
+            <a href="#c">Lamborghini</a>
+            <a href="#d">Porsche</a>
+            <a href="#e">Audi</a>
+            <a href="#collection">Buy Car</a>
+            <a href="#collection_a">Rent Car</a>
+            <a href="#h">Services</a>
+            <a href="#i">About</a>
+        </nav>
+        <nav class="right">
+            <a href="car.html" class="desktop">Account</a>
+            <a href="" class="showdesktop" id="menubtn">Menu</a>
+        </nav>
+    </header>
+    <div class="backdrop"></div>
+    <aside>
+        <button class="close">&times;</button>
+        <a href="#a">Mclaren</a>
+        <a href="#b">Ford</a>
+        <a href="#c">Lamborghini</a>
+        <a href="#d">Porsche</a>
+        <a href="#e">Audi</a>
+        <a href="#collection">Buy Car</a>
+        <a href="#collection_a">Rent Car</a>
+        <a href="#h">Services</a>
+        <a href="#i">About</a>
+    </aside>
+    <!-- <div class="frontpage">
+        <video width="100%" height="100%" autoplay loop muted>
+            <source src="./assets/videos/frontwall.mp4">
+        </video>
+    </div> -->
+    <section id='a' style="background-image: url('car1.jpg');">
+        <div class="content">
+            <h1>Mclaren GTS</h1>
+            <p>Lease starting at $210,000/mon<sup>*</sup></p>
+            <div class="button"><a href="">BUY CAR</a><a href="">RENT CAR</a></div>
+        </div>
+    </section>
+    <section id='b' style="background-image: url('car3.jpg');">
+        <div class="content">
+            <h1>Ford ranger raptor</h1>
+            <p>Lease starting at $50,000/mon<sup>*</sup></p>
+            <div class="button"><a href="">BUY CAR</a><a href="">RENT CAR</a></div>
+        </div>
+    </section>
+    <section id='c' style="background-image: url('car5.jpg');">
+        <div class="content">
+            <h1>Lamborghini aventador s coupe</h1>
+            <p>Lease starting at $150,000/mon<sup>*</sup></p>
+            <div class="button"><a href="">BUY CAR</a><a href="">RENT CAR</a></div>
+        </div>
+    </section>
+    <section id='d' style="background-image: url('car7.jpg');">
+        <div class="content">
+            <h1>Porsche 911 turbo coupe</h1>
+            <p>Lease starting at $120,000/mon<sup>*</sup></p>
+            <div class="button"><a href="">BUY CAR</a><a href="">RENT CAR</a></div>
+        </div>
+    </section>
+    <section id='e' style="background-image: url('car9.jpg');">
+        <div class="content">
+            <h1>Audi r8</h1>
+            <p>Lease starting at $90,000/mon<sup>*</sup></p>
+            <div class="button"><a href="">BUY CAR</a><a href="">RENT CAR</a></div>
+        </div>
+    </section>
+
+    <div id="part-3">
+        <div id="collection">
+            <h1>OUR TOP SELLING CARS</h1>
+            <br>
+            Get the car of your dreams.
+        </div>
+        <div class="display" id="display-1">
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C1" class="photo"></div>
+                <div class="name">
+                    <h2>$462,000</h2>
+                    <br>
+                    Mclaren GTS
+                </div>
+                <button class="b"><a href="#">Book Now</a></button>
+            </div>
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C2" class="photo"></div>
+                <div class="name">
+                    <h2>$60,000</h2>
+                    <br>
+                    Mustang GT 500
+                </div>
+                <button class="b"><a href="#">Book Now</a></button>
+            </div>
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C3" class="photo"></div>
+                <div class="name">
+                    <h2>$360,000</h2>
+                    <br>
+                    Lamborghini aventador s
+                </div>
+                <button class="b"><a href="#">Book Now</a></button>
+            </div>
+        </div>
+        <div class="display" id="display-2">
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C4" class="photo"></div>
+                <div class="name">
+                    <h2>$600,000</h2>
+                    <br>
+                    Audi R8
+                </div>
+                <button class="b"><a href="#">Book Now</a></button>
+            </div>
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C5" class="photo"></div>
+                <div class="name">
+                    <h2>$450,000</h2>
+                    <br>
+                    Ford raptor R
+                </div>
+                <button class="b"><a href="#">Book Now</a></button>
+            </div>
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C6" class="photo"></div>
+                <div class="name">
+                    <h2>$900,000</h2>
+                    <br>
+                    Porsche 911 - GT3 RS
+                </div>
+                <button class="b"><a href="#">Book Now</a></button>
+            </div>
+        </div>
+        <button class="all"><a href="#">See all cars</a></button>
+    </div>
+    <div class="hline2"></div>
+    <div id="part-3">
+        <div id="collection_a">
+            <h1>MOST RENTAL CARS</h1>
+            <br>
+            A company that rents automobiles for short periods of time to the public.
+        </div>
+        <div class="display" id="display-1">
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C1" class="photo"></div>
+                <div class="name">
+                    <h2>$462,000</h2>
+                    <br>
+                    Mclaren GTS
+                </div>
+                <button class="b"><a href="#">Rent Now</a></button>
+            </div>
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C2" class="photo"></div>
+                <div class="name">
+                    <h2>$60,000</h2>
+                    <br>
+                    Mustang GT 500
+                </div>
+                <button class="b"><a href="#">Rent Now</a></button>
+            </div>
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C3" class="photo"></div>
+                <div class="name">
+                    <h2>$360,000</h2>
+                    <br>
+                    Lamborghini aventador s
+                </div>
+                <button class="b"><a href="#">Rent Now</a></button>
+            </div>
+        </div>
+        <div class="display" id="display-2">
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C4" class="photo"></div>
+                <div class="name">
+                    <h2>$600,000</h2>
+                    <br>
+                    Audi R8
+                </div>
+                <button class="b"><a href="#">Rent Now</a></button>
+            </div>
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C5" class="photo"></div>
+                <div class="name">
+                    <h2>$450,000</h2>
+                    <br>
+                    Ford raptor R
+                </div>
+                <button class="b"><a href="#">Rent Now</a></button>
+            </div>
+            <div class="card" data-aos="zoom-in-up">
+                <div id="C6" class="photo"></div>
+                <div class="name">
+                    <h2>$900,000</h2>
+                    <br>
+                    Porsche 911 - GT3 RS
+                </div>
+                <button class="b"><a href="#">Rent Now</a></button>
+            </div>
+        </div>
+        <button class="all"><a href="#">See all cars</a></button>
+    </div>
+    <script src="script.js"></script>
+
+    <div class="wrappers" id="h">
+        <h1>Our Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Esse amet illo eos eligendi nobis nam aspernatur
+            placeat.</p>
+        <div class="content-boxs">
+            <div class="cards">
+                <i class="bx bx-bar-chart-alt bx-md"></i>
+                <h2>BUY CARS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse amet illo eos eligendi nobis nam aspernatur
+                    placeat. </p>
+
+            </div>
+            <div class="cards">
+                <i class="bx bx-laptop bx-md"></i>
+                <h2>RENTALS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse amet illo eos eligendi nobis nam aspernatur
+                    placeat.</p>
+
+            </div>
+            <div class="cards">
+                <i class='bx bx-user bx-md'></i>
+
+                <h2>SPARE PARTS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse amet illo eos eligendi nobis nam aspernatur
+                    placeat.</p>
+
+            </div>
+            <div class="cards">
+                <i class="bx bx-mail-send bx-md"></i>
+                <h2>ACCESSORIES</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse amet illo eos eligendi nobis nam aspernatur
+                    placeat.</p>
+
+            </div>
+            <div class="cards">
+                <i class="bx bx-bar-chart-alt bx-md"></i>
+                <h2>SERVICING</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse amet illo eos eligendi nobis nam aspernatur
+                    placeat.</p>
+
+            </div>
+            <div class="cards">
+                <i class="bx bx-paint bx-md"></i>
+                <h2>INSURANCE</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse amet illo eos eligendi nobis nam aspernatur
+                    placeat.</p>
+
+            </div>
+        </div>
+    </div>
+    <div id="part-5">
+        <div class="part-5-T">
+            <div class="part-5-1" id="i">
+                <img src="logo2.png" alt="logo" width="500px" height="100px">
+                <br>
+                The automotive industry is a vast network of companies worldwide involved in the development and
+                marketing of motor vehicles.
+                <br>
+                <input type="text" placeholder="Your E-mail address"><button class="send">Send</button>
+            </div>
+            <div class="part-5-2" id="footer-nav">
+                <h3>Navigation</h3><br>
+                <a href="#a" data-aos="slide-up">Home</a>
+                <a href="#b" data-aos="slide-up">About</a>
+                <a href="#wrappers" data-aos="slide-up">Features</a>
+                <a href="#part-3" data-aos="slide-up">Collection</a>
+                <a href="#part-4" data-aos="slide-up">FAQ</a>
+            </div>
+            <div class="part-5-2">
+                <h3>Support Us</h3><br>
+                <a href="#" data-aos="slide-up">Contact Us</a>
+                <a href="#" data-aos="slide-up">Support Center</a>
+                <a href="#" data-aos="slide-up">Security</a>
+            </div>
+            <div class="part-5-2 Social">
+                <h3>Social Media</h3><br>
+                <a href="https://www.instagram.com/subhs04?igsh=MWx1bXBxeXE2bmlrbA%3D%3D&utm_source=qr"><i
+                        class="fab fa-instagram"></i> Subham</a>
+                <a href="https://www.instagram.com/piyushkumar3814?igsh=cW1xcWZha3JldmR6"><i
+                        class="fab fa-instagram"></i> Piyush</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </div>
+        </div>
+        <div class="hline2"></div>
+        <div class="part-5-B">
+            Terms & conditions | Privacy policy | Sitemap
+            <br>
+            © Automobile Garage 2024 All Rights Reserved.
+        </div>
+    </div>
+    <!-- <script src="./car.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 50,
+            duration: 1000,
+        });
+    </script>
+
+</html>
